@@ -1,4 +1,4 @@
-package com.test.automationexercise.pages;
+package com.test.automationexercise.pages.registerUserPage;
 
 import com.test.automationexercise.configuaration.BasePage;
 import org.openqa.selenium.WebDriver;
@@ -48,18 +48,36 @@ public class EnterAccountInformationPage extends BasePage {
     }
 
     @FindBy(css = "#days")
+    public WebElement ClickOnDay;
+    public WebElement getClickOnDay(){
+        return ClickOnDay;
+    }
+
+    @FindBy(css = "#days > option:nth-child(30)")
     public WebElement SelectDay;
     public WebElement getSelectDay(){
         return SelectDay;
     }
 
     @FindBy(css = "#months")
+    public WebElement ClickOnMonth;
+    public WebElement getClickOnMonth(){
+        return ClickOnMonth;
+    }
+
+    @FindBy(css = "#months > option:nth-child(13)")
     public WebElement SelectMonth;
     public WebElement getSelectMonth(){
         return SelectMonth;
     }
 
     @FindBy(css = "#years")
+    public WebElement ClickOnYear;
+    public WebElement getClickOnYear(){
+        return ClickOnYear;
+    }
+
+    @FindBy(css = "#years > option:nth-child(28)")
     public WebElement SelectYear;
     public WebElement getSelectYear(){
         return SelectYear;
@@ -141,5 +159,17 @@ public class EnterAccountInformationPage extends BasePage {
     public WebElement ClickOnCreateAccountButton;
     public WebElement getClickOnCreateAccountButton(){
         return ClickOnCreateAccountButton;
+    }
+
+    @FindBy(css = "#form > div > div > div > h2 > b")
+    public WebElement AccountCreated;
+    public WebElement getAccountCreated(){
+        return AccountCreated;
+    }
+
+    @FindBy(css = "#form > div > div > div > div > a")
+    public WebElement ClickOnContinueButton;
+    public WebElement getClickOnContinueButton(){
+        return ClickOnContinueButton;
     }
 }
