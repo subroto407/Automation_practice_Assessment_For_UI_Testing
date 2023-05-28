@@ -17,6 +17,18 @@ public class LandingPage extends BasePage {
         return SignUpLoginButton;
     }
 
+    @FindBy(css = "#header > div > div > div > div.col-sm-8 > div > ul > li:nth-child(10) > a")
+    public WebElement VerifyLoggedInAsUserName;
+    public WebElement getVerifyLoggedInAsUserName(){
+        return VerifyLoggedInAsUserName;
+    }
+
+    @FindBy(css = "#header > div > div > div > div.col-sm-8 > div > ul > li:nth-child(5) > a")
+    public WebElement ClickOnDeleteAccountButton;
+    public WebElement getClickOnDeleteAccountButton(){
+        return ClickOnDeleteAccountButton;
+    }
+
 
 
 }

@@ -1,4 +1,4 @@
-package com.test.automationexercise.pages;
+package com.test.automationexercise.pages.registerUserPage;
 
 import com.test.automationexercise.configuaration.BasePage;
 import org.openqa.selenium.WebDriver;
@@ -34,5 +34,6 @@ public class SignUpLoginPage extends BasePage {
     public WebElement getClickOnSignUpButton(){
         return ClickOnSignUpButton;
     }
+
 
 }
