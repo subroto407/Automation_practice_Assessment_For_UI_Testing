@@ -35,5 +35,23 @@ public class SignUpLoginPage extends BasePage {
         return ClickOnSignUpButton;
     }
 
+    @FindBy(css = "#form > div > div > div.col-sm-4.col-sm-offset-1 > div > h2")
+    public WebElement LoginToAccountVerifyText;
+    public WebElement getLoginToAccountVerifyText(){
+        return LoginToAccountVerifyText;
+    }
+
+    @FindBy(css = "#form > div > div > div.col-sm-4.col-sm-offset-1 > div > form > button")
+    public WebElement ClickOnLoginButton;
+    public WebElement getClickOnLoginButton(){
+        return ClickOnLoginButton;
+    }
+
+    @FindBy(css = "#form > div > div > div.col-sm-4.col-sm-offset-1 > div > form > p")
+    public WebElement IncorrectEmailAndPasswordText;
+    public WebElement getIncorrectEmailAndPasswordText(){
+        return IncorrectEmailAndPasswordText;
+    }
+
 
 }

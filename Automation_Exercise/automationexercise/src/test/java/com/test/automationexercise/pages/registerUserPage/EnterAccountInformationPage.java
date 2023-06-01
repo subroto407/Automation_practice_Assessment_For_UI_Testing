@@ -47,11 +47,6 @@ public class EnterAccountInformationPage extends BasePage {
         return InputPassword;
     }
 
-    @FindBy(css = "#days")
-    public WebElement ClickOnDay;
-    public WebElement getClickOnDay(){
-        return ClickOnDay;
-    }
 
     @FindBy(css = "#days > option:nth-child(30)")
     public WebElement SelectDay;
@@ -59,11 +54,6 @@ public class EnterAccountInformationPage extends BasePage {
         return SelectDay;
     }
 
-    @FindBy(css = "#months")
-    public WebElement ClickOnMonth;
-    public WebElement getClickOnMonth(){
-        return ClickOnMonth;
-    }
 
     @FindBy(css = "#months > option:nth-child(13)")
     public WebElement SelectMonth;
@@ -71,11 +61,6 @@ public class EnterAccountInformationPage extends BasePage {
         return SelectMonth;
     }
 
-    @FindBy(css = "#years")
-    public WebElement ClickOnYear;
-    public WebElement getClickOnYear(){
-        return ClickOnYear;
-    }
 
     @FindBy(css = "#years > option:nth-child(28)")
     public WebElement SelectYear;
@@ -125,7 +110,7 @@ public class EnterAccountInformationPage extends BasePage {
         return InputAddress2;
     }
 
-    @FindBy(css = "#country")
+    @FindBy(css = "#country > option:nth-child(1)")
     public WebElement SelectCountry;
     public WebElement getSelectCountry(){
         return SelectCountry;
@@ -172,4 +157,5 @@ public class EnterAccountInformationPage extends BasePage {
     public WebElement getClickOnContinueButton(){
         return ClickOnContinueButton;
     }
+
 }
