@@ -14,6 +14,7 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 target/
 Testngsuite.xml/
 automationexercise.iml/
+.gitignore/
 
 # Runtime data
 pids

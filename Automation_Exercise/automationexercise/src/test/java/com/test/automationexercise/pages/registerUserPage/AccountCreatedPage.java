@@ -12,9 +12,9 @@ public class AccountCreatedPage extends BasePage {
     }
 
     @FindBy(css = "#form > div > div > div > h2 > b")
-    public WebElement AccountCreated;
-    public WebElement getAccountCreated(){
-        return AccountCreated;
+    public WebElement AccountCreatedHeaderText;
+    public WebElement getAccountCreatedHeaderText(){
+        return AccountCreatedHeaderText;
     }
 
     @FindBy(css = "#form > div > div > div > div > a")
