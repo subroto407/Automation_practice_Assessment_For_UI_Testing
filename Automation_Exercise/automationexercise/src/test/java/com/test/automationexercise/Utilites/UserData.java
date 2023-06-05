@@ -32,5 +32,6 @@ public class UserData {
     public static final String INPUT_SUBJECT = "Software Quality Assurance";
     public static final String INPUT_MASSAGE = "If you have any suggestion areas or improvements, do let us know. We will definitely work on it.";
 
-
+    // Cart Page
+    public static final String CART_PAGE = "https://automationexercise.com/view_cart";
 }

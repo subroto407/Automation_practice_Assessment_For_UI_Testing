@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class ContactUsFormValidation extends BaseClass {
 
     @Test
-    void contactUsFormValidation(){
+    public void contactUsFormValidation(){
 
         LandingPage lp = new LandingPage(driver);
         ContactUsPage cup = new ContactUsPage(driver);

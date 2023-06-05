@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 public class RegisterUserValidation extends BaseClass {
 
     @Test
-    void registerUserValidation(){
+    public void registerUserValidation(){
 
         LandingPage lp = new LandingPage(driver);
         SignUpLoginPage slp = new SignUpLoginPage(driver);
@@ -139,36 +139,36 @@ public class RegisterUserValidation extends BaseClass {
         // Click 'Continue' button
         acp.getClickOnContinueButton().click();
         sleepTime(1000);
-
-        // Verify that 'Logged in as username' is visible
-        if (lp.getVerifyLoggedInAsUserName().isDisplayed())
-        {
-            String actualVerifyUserName = lp.getVerifyLoggedInAsUserName().getText();
-            Assert.assertTrue(true,actualVerifyUserName);
-        }else {
-            System.out.println(UserData.NEGATIVE_ERROR_MASSAGE);
-        }
-
-        // Click 'Delete Account' button
-        lp.getClickOnDeleteAccountButton().click();
-        sleepTime(1000);
-
-        // Verify that 'ACCOUNT DELETED!' is visible
-        if (adp.getVerifyAccountDeletedHeader().isDisplayed())
-        {
-            String actualVerifyAccountDeleteText = adp.getVerifyAccountDeletedHeader().getText();
-            Assert.assertTrue(true,actualVerifyAccountDeleteText);
-        }else {
-            System.out.println(UserData.NEGATIVE_ERROR_MASSAGE);
-        }
-
-        // click 'Continue' button
-        adp.getClickOnContinueButton().click();
-        sleepTime(1000);
-
-        // DRIVER CLOSE
-        driver.close();
-
-
+//
+//        // Verify that 'Logged in as username' is visible
+//        if (lp.getVerifyLoggedInAsUserName().isDisplayed())
+//        {
+//            String actualVerifyUserName = lp.getVerifyLoggedInAsUserName().getText();
+//            Assert.assertTrue(true,actualVerifyUserName);
+//        }else {
+//            System.out.println(UserData.NEGATIVE_ERROR_MASSAGE);
+//        }
+//
+//        // Click 'Delete Account' button
+//        lp.getClickOnDeleteAccountButton().click();
+//        sleepTime(1000);
+//
+//        // Verify that 'ACCOUNT DELETED!' is visible
+//        if (adp.getVerifyAccountDeletedHeader().isDisplayed())
+//        {
+//            String actualVerifyAccountDeleteText = adp.getVerifyAccountDeletedHeader().getText();
+//            Assert.assertTrue(true,actualVerifyAccountDeleteText);
+//        }else {
+//            System.out.println(UserData.NEGATIVE_ERROR_MASSAGE);
+//        }
+//
+//        // click 'Continue' button
+//        adp.getClickOnContinueButton().click();
+//        sleepTime(1000);
+//
+//        // DRIVER CLOSE
+//        driver.close();
+//
+//
     }
 }

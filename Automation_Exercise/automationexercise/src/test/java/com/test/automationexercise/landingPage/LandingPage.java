@@ -42,6 +42,18 @@ public class LandingPage extends BasePage {
         return ContactUsButton;
     }
 
+    @FindBy(css = ".nav.navbar-nav > li:nth-of-type(2) > a")
+    public WebElement ClickOnProductButton;
+    public WebElement getClickOnProductButton(){
+        return ClickOnProductButton;
+    }
+
+    @FindBy(css = "#header > div > div > div > div.col-sm-8 > div > ul > li:nth-child(3) > a")
+    public WebElement ClickOnCartButton;
+    public WebElement getClickOnCartButton(){
+        return ClickOnCartButton;
+    }
+
 
 
 }

@@ -13,7 +13,6 @@ public class SubscriptionHomePageValidation extends BaseClass {
     @Test
     void subscriptionHomePageValidation(){
 
-        LandingPage lp = new LandingPage(driver);
         SubscriptionPage sp = new SubscriptionPage(driver);
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
